@@ -1,0 +1,137 @@
+:root {
+
+    /* Colors: */
+    --mine-shaft: #262626;
+    --riptide: #67E2D5;
+    --heliotrope: #E44BFA;
+    --candy-corn: #FAE44B;
+    --dodger-blue: #5C4BFA;
+    --periwinkle: #EEEEFF;
+    --vivid-tangerine: #FF9585;
+    --unnamed-color-000000: #000000;
+    
+    /* Font/text values */
+    --unnamed-font-family-montserrat: Montserrat;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-12: 12px;
+    --unnamed-font-size-80: 80px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-12: 12px;
+    --unnamed-line-spacing-80: 80px;
+    }
+    
+    /* Character Styles */
+    .untitled-style {
+    font-family: var(--unnamed-font-family-montserrat);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-12);
+    line-height: var(--unnamed-line-spacing-12);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-000000);
+    }
+    .untitled-style {
+    font-family: var(--unnamed-font-family-montserrat);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-80);
+    line-height: var(--unnamed-line-spacing-80);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-000000);
+    }
+
+    /* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 31%;
+  background-color: rgba(162, 162, 188, 0.26);
+  border: 1px solid #707070;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: #E8E8E8;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}*/
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 31%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+/*This is the end of Sidebar*/
+
+/* Container holding the image and the text Creativity Image*/
+.container {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #E8E8E8;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    text-align: right;
+  }
+  
+  /*Background color dark mode*/
+  body {background-color: #262626;}
+
+  /*h1: TRACE 85 aligan left*/
+  h1 {
+    color: #E8E8E8;
+    text-align: left;
+    padding-left: 30px;
+  }
+
+ /*p: TRACE 85 aligan left*/
+  p {
+    color: #EEEEFF;
+    text-align: left;
+    padding-left: 30px;
+  }
+
